@@ -22,17 +22,13 @@ var diagonalSum = function(mat) {
                 }
             }else{
                 if(row.length%2===0){
-                    sum+= row[first];
-                row[first]=0
-                sum+= row[last];
+                    sum+= row[first]+ row[last];
                     first--;
                     last++
                 }else{
                     first--;
                     last++;
-                    sum+= row[first];
-                row[first]=0
-                sum+= row[last];
+                    sum+= row[first]+ row[last];
                 }
             }
     }
