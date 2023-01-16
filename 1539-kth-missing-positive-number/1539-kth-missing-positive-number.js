@@ -7,8 +7,10 @@ var findKthPositive = function(arr, k) {
     let res=[];
     let i=0;
     let curr=1
+    let obj={};
+    arr.forEach(n=> obj[n]= 1)
     while(i<Infinity){
-        if(!arr.includes(curr)){
+        if(!obj[curr]){
             res.push(curr);
         }
         curr++;
