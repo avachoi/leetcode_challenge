@@ -9,11 +9,7 @@ var merge = function(nums1, m, nums2, n) {
     
     let positives= [...nums1];
     for(let i=nums1.length-1; i>=m; i--){
-        if(nums1[i]===0){
-            positives.pop()
-        }else{
-            break
-        }
+        positives.pop()
     }
     
     
