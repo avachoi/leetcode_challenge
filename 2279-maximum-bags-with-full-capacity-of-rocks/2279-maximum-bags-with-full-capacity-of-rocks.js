@@ -14,7 +14,6 @@ var maximumBags = function(capacity, rocks, additionalRocks) {
             if(extra>=arr[i]){
                 extra-=arr[i];
                 count++;
-                console.log(i)
             }
         }
     return count
